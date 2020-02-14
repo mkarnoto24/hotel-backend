@@ -12,7 +12,7 @@
 - [MySQL](https://www.mysql.com) - Database
 - [istanbul nyc](https://www.istanbul.js.org) - Code coverage
  
-##Endpoint
+## Endpoint
  
  ### `Get all Room Types`
 Method GET<br /> 
@@ -42,24 +42,24 @@ Method POST<br />
 http://localhost:7000/api/v1/order/payment <br />
 example for request body : <br />
 { <br />
-  "order_id":"1",
-  "id_customer":"1",
-  "jml_bayar":"500000",
-  "nm_bank":"Mandiri",
-  "no_rek":"121212121",
+  "order_id":"1",<br />
+  "id_customer":"1",<br />
+  "jml_bayar":"500000",<br />
+  "nm_bank":"Mandiri",<br />
+  "no_rek":"121212121",<br />
   "attachment":"bukti_pembayaran.png" <br />
 }<br />
 example for output response body : <br />
 {<br />
-    "success": true,
-    "data": {
-        "order_id": "1",
-        "id_customer": "1",
-        "jml_bayar": "500000",
-        "nm_bank": "Mandiri",
-        "no_rek": "121212121",
+    "success": true,<br />
+    "data": {<br />
+        "order_id": "1",<br />
+        "id_customer": "1",<br />
+        "jml_bayar": "500000",<br />
+        "nm_bank": "Mandiri",<br />
+        "no_rek": "121212121",<br />
         "attachment": "bukti_pembayaran.png"<br />
-    }
+    }<br />
 }
 
 ### `Create hotel booking data from user`
@@ -67,28 +67,28 @@ Method POST<br />
 http://localhost:7000/api/v1/orders<br />
 example for request body :<br />
 {<br />
-	"order_date":"2020-02-12 14:00:00",
-	"payment_deadline":"2020-02-12 14:30:00",
-	"room_id":"2",
-	"jml_order_room":"1",
-	"id_customer":"1",
-	"check_in":"2020-02-12 14:00:00",
-	"check_out":"2020-02-13 14:00:00",
-	"total_bayar":"1000000"
+	"order_date":"2020-02-12 14:00:00",<br />
+	"payment_deadline":"2020-02-12 14:30:00",<br />
+	"room_id":"2",<br />
+	"jml_order_room":"1",<br />
+	"id_customer":"1",<br />
+	"check_in":"2020-02-12 14:00:00",<br />
+	"check_out":"2020-02-13 14:00:00",<br />
+	"total_bayar":"1000000"<br />
 }<br />
 example for output response body :<br />
 {<br />
-    "success": true,
-    "data": {
-        "order_date": "2020-02-12 14:00:00",
-        "payment_deadline": "2020-02-12 14:30:00",
-        "room_id": "2",
-        "jml_order_room": "1",
-        "id_customer": "1",
-        "check_in": "2020-02-12 14:00:00",
-        "check_out": "2020-02-13 14:00:00",
-        "total_bayar": "1000000"
-    }
+    "success": true,<br />
+    "data": {<br />
+        "order_date": "2020-02-12 14:00:00",<br />
+        "payment_deadline": "2020-02-12 14:30:00",<br />
+        "room_id": "2",<br />
+        "jml_order_room": "1",<br />
+        "id_customer": "1",<br />
+        "check_in": "2020-02-12 14:00:00",<br />
+        "check_out": "2020-02-13 14:00:00",<br />
+        "total_bayar": "1000000"<br />
+    }<br />
 }
 
 ### `Payment confirmation status update`
