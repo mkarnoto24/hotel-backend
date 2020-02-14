@@ -38,7 +38,7 @@ app.group("/api/v1", (router) => {
     router.get('/user/:id', usersControllers.showById)
 })
 app.group("/api/v1", (router) => {
-    router.get('/order/:id', reservationControllers.showById)
+    router.get('/order/:id/user', reservationControllers.showById)
     router.post('/order/payment', reservationControllers.payment)
 })
 app.group("/api/v1", (router) => {
