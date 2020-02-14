@@ -24,33 +24,33 @@ http://localhost:7000/api/v1/rooms
 
  ### `Get Room Info By ID Room`
 Method GET<br /> 
-http://localhost:7000/api/v1/room/:id
+http://localhost:7000/api/v1/room/:id<br />
 example : http://localhost:7000/api/v1/room/1
 
  ### `Get User By ID User`
 Method GET<br /> 
-http://localhost:7000/api/v1/user/:id
+http://localhost:7000/api/v1/user/:id <br />
 example : http://localhost:7000/api/v1/user/1
 
 ### `Get Reservation data By ID User`
 Method GET<br /> 
-http://localhost:7000/api/v1/order/:id/user
+http://localhost:7000/api/v1/order/:id/user <br />
 example : http://localhost:7000/api/v1/order/1/user
 
 ### `Post payment for hotels that have been booked by the user`
 Method POST<br /> 
-http://localhost:7000/api/v1/order/payment
-example for request body :
-{
+http://localhost:7000/api/v1/order/payment <br />
+example for request body : <br />
+{ <br />
   "order_id":"1",
-	"id_customer":"1",
-	"jml_bayar":"500000",
-	"nm_bank":"Mandiri",
-	"no_rek":"121212121",
-	"attachment":"bukti_pembayaran.png"
-}
-example for output response body : 
-{
+  "id_customer":"1",
+  "jml_bayar":"500000",
+  "nm_bank":"Mandiri",
+  "no_rek":"121212121",
+  "attachment":"bukti_pembayaran.png" <br />
+}<br />
+example for output response body : <br />
+{<br />
     "success": true,
     "data": {
         "order_id": "1",
@@ -58,15 +58,15 @@ example for output response body :
         "jml_bayar": "500000",
         "nm_bank": "Mandiri",
         "no_rek": "121212121",
-        "attachment": "bukti_pembayaran.png"
+        "attachment": "bukti_pembayaran.png"<br />
     }
 }
 
 ### `Create hotel booking data from user`
 Method POST<br /> 
-http://localhost:7000/api/v1/orders
-example for request body :
-{
+http://localhost:7000/api/v1/orders<br />
+example for request body :<br />
+{<br />
 	"order_date":"2020-02-12 14:00:00",
 	"payment_deadline":"2020-02-12 14:30:00",
 	"room_id":"2",
@@ -75,9 +75,9 @@ example for request body :
 	"check_in":"2020-02-12 14:00:00",
 	"check_out":"2020-02-13 14:00:00",
 	"total_bayar":"1000000"
-}
-example for output response body :
-{
+}<br />
+example for output response body :<br />
+{<br />
     "success": true,
     "data": {
         "order_date": "2020-02-12 14:00:00",
@@ -93,7 +93,7 @@ example for output response body :
 
 ### `Payment confirmation status update`
 Method PUT<br /> 
-http://localhost:7000/api/v1/order/:id
+http://localhost:7000/api/v1/order/:id<br />
 example : http://localhost:7000/api/v1/order/2
 
 ### `Get financial statements`
